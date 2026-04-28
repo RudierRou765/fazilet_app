@@ -1,0 +1,41 @@
+name: fazilet_app
+description: Fazilet — Islamic lifestyle and prayer times platform
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Typography
+  google_fonts: ^6.1.0
+
+  # Local Storage & Database
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Monetization
+  google_mobile_ads: ^8.0.0
+
+  # Device Sensors
+  sensors_plus: ^7.0.0
+
+  # Utilities
+  path: ^1.8.3
+  uuid: ^4.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
