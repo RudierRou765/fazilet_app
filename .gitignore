@@ -1,0 +1,51 @@
+# Flutter/Dart
+build/
+.dart_tool/
+.pub/
+packages/
+pubspec.lock
+
+# Android
+android/app/build/
+android/build/
+*.apk
+*.ap_
+*.dex
+
+# iOS
+ios/build/
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/app.framework/
+ios/Flutter/Flutter.framework/
+ios/Flutter/flutter_assets/
+ios/Flutter/Release/
+
+# macOS
+macos/build/
+
+# Linux
+linux/build/
+
+# Windows
+windows/build/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Hive
+*.hive/
+
+# Temp
+*.log
+*.tmp
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db

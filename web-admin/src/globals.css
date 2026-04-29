@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand-guidelines color palette */
+    --background: 60 20% 98%; /* #faf9f5 */
+    --foreground: 60 5% 8%; /* #141413 */
+    --card: 0 0% 100%;
+    --card-foreground: 60 5% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 60 5% 8%;
+    --primary: 60 5% 8%; /* #141413 */
+    --primary-foreground: 60 20% 98%; /* #faf9f5 */
+    --secondary: 210 30% 60%; /* #6a9bcc */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 60 10% 95%;
+    --muted-foreground: 60 5% 40%;
+    --accent: 16 68% 57%; /* #d97757 */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 60 10% 90%;
+    --input: 60 10% 90%;
+    --ring: 16 68% 57%; /* accent primary */
+    --radius: 0.5rem;
+
+    /* Typography from brand-guidelines */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Lora', serif;
+  }
+
+  .dark {
+    --background: 60 5% 8%; /* #141413 */
+    --foreground: 60 20% 98%; /* #faf9f5 */
+    --card: 60 5% 10%;
+    --card-foreground: 60 20% 98%;
+    --popover: 60 5% 10%;
+    --popover-foreground: 60 20% 98%;
+    --primary: 60 20% 98%; /* #faf9f5 */
+    --primary-foreground: 60 5% 8%; /* #141413 */
+    --secondary: 210 30% 60%; /* #6a9bcc */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 60 5% 15%;
+    --muted-foreground: 60 20% 60%;
+    --accent: 16 68% 57%; /* #d97757 */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 60 5% 15%;
+    --input: 60 5% 15%;
+    --ring: 16 68% 57%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-body;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    @apply font-heading;
+  }
+
+  /* Ensure brand accent colors are available as utility classes */
+  .text-accent-primary { color: #d97757; }
+  .text-accent-secondary { color: #6a9bcc; }
+  .text-accent-tertiary { color: #788c5d; }
+  .bg-accent-primary { background-color: #d97757; }
+  .bg-accent-secondary { background-color: #6a9bcc; }
+  .bg-accent-tertiary { background-color: #788c5d; }
+}

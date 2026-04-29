@@ -1,0 +1,26 @@
+{
+  "name": "fazilet-mcp-server",
+  "version": "1.0.0",
+  "description": "Fazilet MCP Server — Asset management, coordinate DB engine, and enterprise search for Fazilet ecosystem",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "inspect": "npx @modelcontextprotocol/inspector dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.0",
+    "zod": "^3.24.0",
+    "better-sqlite3": "^11.5.0",
+    "archiver": "^7.0.0",
+    "extract-zip": "^2.0.1",
+    "uuid": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/node": "^22.0.0",
+    "@types/archiver": "^6.0.0",
+    "typescript": "^5.7.0"
+  }
+}
