@@ -3,7 +3,6 @@ build/
 .dart_tool/
 .pub/
 packages/
-pubspec.lock
 
 # Android
 android/app/build/
@@ -49,3 +48,12 @@ windows/build/
 # OS
 .DS_Store
 Thumbs.db
+
+# Backup and auxiliary folders
+FAZILET_YEDEK/
+mizan/
+mobile-app/
+web-admin/
+fazilet-mcp-server/
+*.sqlite
+!assets/data/*.sqlite
